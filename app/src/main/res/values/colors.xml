@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_200">#17F1D7</color>
+    <color name="green_500">#48CFAF</color>
+    <color name="green_700">#00CF91</color>
+
+    <color name="dark_green">#004156</color>
+    <color name="light_gray">#AFCFEA</color>
+
+    <color name="whitesmoke">#F2F8FD</color>
+
+
+    <color name="secondary">#58595B</color>
+    <color name="dark">#2F3538</color>
+    <color name="white">#FFFFFF</color>
+    <color name="success">#00DC7D</color>
+    <color name="warn">#FFC11E</color>
+    <color name="danger">#F85C50</color>
+</resources>

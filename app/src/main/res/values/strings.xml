@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Koto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_todo">Add todo</string>
+    <string name="new_todo">Add new todo</string>
+    <string name="nothing_to_do">Nothing to do</string>
+    <string name="no_task_image">No task image</string>
+    <string name="description">Description</string>
+    <string name="name">Name</string>
+    <string name="search">Search</string>
+    <string name="sort_by">Sort by</string>
+    <string name="priority_high">Priority High</string>
+    <string name="priority_low">Priority Low</string>
+    <string name="delete_all">Delete All</string>
+    <string name="save">Save</string>
+    <string name="menu_save">Save</string>
+    <string name="delete_task">Delete task</string>
+
+    <string-array name="priorities">
+        <item>High priority</item>
+        <item>Mid priority</item>
+        <item>Low priority</item>
+    </string-array>
+</resources>

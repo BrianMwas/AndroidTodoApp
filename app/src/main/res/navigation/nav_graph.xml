@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.droid.koto.fragments.list.ListFragment"
+        android:label="Tasks"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_addNewFragment"
+            app:destination="@id/addNewFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_listFragment_to_updateFragment"
+            app:destination="@id/updateFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/to_left"
+            app:popExitAnim="@anim/from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewFragment"
+        android:name="com.droid.koto.fragments.add.AddNewFragment"
+        android:label="Create Task"
+        tools:layout="@layout/fragment_add_new" >
+        <action
+            android:id="@+id/action_addNewFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popUpTo="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.droid.koto.fragments.update.UpdateFragment"
+        android:label="Update Task"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/listFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="currentItem"
+            app:argType="com.droid.koto.data.models.TodoData" />
+    </fragment>
+</navigation>

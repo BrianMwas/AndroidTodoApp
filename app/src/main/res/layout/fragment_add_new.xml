@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".fragments.add.AddNewFragment">
+
+    <EditText
+        android:id="@+id/name_tv"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        android:textSize="15sp"
+        android:background="@drawable/custom_input"
+        android:autofillHints="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/priorities_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/priorities"
+        android:background="@drawable/custom_input"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv" />
+
+    <EditText
+        android:id="@+id/description_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints="true"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:maxLines="8"
+        android:minLines="8"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priorities_spinner"
+        app:layout_constraintVertical_bias="0.014" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
